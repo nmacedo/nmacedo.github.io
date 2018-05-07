@@ -1,0 +1,144 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Nuno Macedo</title>
+		<meta name="author"   content="Nuno Macedo" />
+		<meta name="keywords" content="Nuno Macedo, PhD, Bidirectional Transformations, UM, Braga, Minho" />
+		<meta name="description" content="Home page of Nuno Macedo" />
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="text/javascript" src="https://rss2json.com/gfapi.js"></script>
+
+    <script type="text/javascript">
+
+    google.load("feeds", "1");
+
+    function initialize() {
+      var feed = new google.feeds.Feed("http://haslab.uminho.pt/nmacedo/feed");
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.getElementById("feed");
+          var div = document.createElement("dl");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            if (entry.link.indexOf("announcements") >= 0){
+            var dt = document.createElement("dt");
+            dt.appendChild(document.createTextNode(entry.publishedDate.substring(0,10)));
+            var dd = document.createElement("dd");
+            var a = document.createElement("a");
+            a.appendChild(document.createTextNode(entry.title));
+            var l = document.createAttribute("href");
+            l.value = entry.link;
+            a.setAttributeNode(l);
+            dd.appendChild(a);
+            div.appendChild(dt);
+            div.appendChild(dd);
+          }
+          }
+          container.appendChild(div);
+        }
+      });
+    }
+    google.setOnLoadCallback(initialize);
+
+    </script>
+
+ 	</head>
+   	    <body>
+<body>
+  <div id="wrap">
+    <div id="header">
+
+        <h3>Nuno Macedo</h3>
+
+<p>I'm a post-doctoral researcher at <a href="http://haslab.uminho.pt">HASLab</a>, INESC TEC's unit focused on high-assurance software development, at the University of Minho, Portugal, studying and developing formal techniques for software engineering.</p>
+
+<p>I've completed my joint PhD degree on computer science from the Universities of Minho, Aveiro and Porto, on a "<em>Relational Approach to Bidirectional Transformation</em>" under the supervision of Professor Alcino Cunha. Previously I've completed the Master degree on Computer Engineering, at the University of Minho.</p>
+
+<p>My main research interest lies in trustworthy software design, particularly on the application of lightweight formal methods to Software Engineering. <em>Electrum</em> and its <a href="https://github.com/nmacedo/Electrum">Analyzer</a>, an extension to <a href="http://alloytools.org/">Alloy</a>, have been design precisely for this goal. Checkout the <a href="https://github.com/haslab/Electrum/wiki/ERTMS">answer</a> to the ABZ18 call for case study contributions to have an idea of its power. We've also applied such techniques in consultancy projects, as the <a href="https://github.com/fccn/PTCRISync">PTCRIS</a> project commissioned by the Portuguese Foundation for Science and Technology.
+</p>
+</div>
+    <div id="sidebar"><h3>Contacts</h3>
+    <p>Departamento de Informática<br>
+       Universidade do Minho<br>
+       Campus de Gualtar<br>
+       4710-057 Braga, Portugal</p>
+
+    <p>nuno (dot) m (dot) macedo (at) inesctec (dot) pt</p>
+      <p><a  href="https://github.com/nmacedo" rel="nofollow"><img src="https://assets-cdn.github.com/favicon.ico" class="icon" /></a><a  href="https://scholar.google.pt/citations?user=reE2X6IAAAAJ&amp;hl=en" rel="nofollow"><img src="https://scholar.google.pt/favicon-png.ico" class="icon" /></a><a  href="http://dblp.uni-trier.de/pers/hd/m/Macedo:Nuno.html" rel="nofollow"><img src="http://dblp.uni-trier.de/img/favicon.ico" class="icon" /></a><a href="http://orcid.org/0000-0002-4817-948X" rel="nofollow"><img src="http://orcid.org/sites/all/themes/orcidResponsive/apple-touch-icon.png" class="icon" /></a><a  href="http://www.degois.pt/visualizador/curriculum.jsp?key=6880898755975090" rel="nofollow"><img src="http://www.degois.pt/imagens/img_visualizador/Logo.png" class="icon" /></a><a href="https://www.scopus.com/authid/detail.uri?authorId=55415518200" rel="nofollow"><img src="https://www.scopus.com/static/images/favicon.ico?ver=1.0" class="icon" /></a><a  href="http://www.researcherid.com/rid/A-1539-2013" rel="nofollow"><img src="http://images.webofknowledge.com/WOKRS517B2.3/images/RID/r.ico" class="icon" /></a><a  href="http://haslab.uminho.pt/nmacedo/" rel="nofollow"><img src="http://haslab.uminho.pt/sites/default/files/haslab_favicon.ico" class="icon" /></a></p>
+
+
+
+
+<div id="feed"></div>
+  </div>
+
+<div id="content">
+
+
+<h3>SELECTED PUBLICATIONS</h3>
+<ul>
+<li>N. Macedo, T. Jorge and A. Cunha. <a style="font-weight: bold;" href="http://dx.doi.org/10.1109/TSE.2016.2620145">A Feature-based Classification of Model Repair Approaches</a>. IEEE Transactions on Software Engineering, 2017.</li>
+<li>A. Santos, A. Cunha, N. Macedo and C. Lourenço. <a style="font-weight: bold;" href="https://doi.org/10.1109/IROS.2016.7759661">A Framework for Quality Assessment of ROS Repositories</a>. 2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2016). IEEE/RSJ, 2016.</li>
+<li>N. Macedo, J. Brunel, D. Chemouil, A. Cunha and D. Kuperberg. <a style="font-weight: bold;" href="http://dx.doi.org/10.1145/2950290.2950318">Lightweight Specification and Analysis of Dynamic Systems with Rich Configurations</a>. 24th ACM SIGSOFT International Symposium on the Foundations of Software Engineering (FSE 2016). ACM, 2016.</li>
+<li>N. Macedo and A. Cunha. <a style="font-weight: bold;" href="http://dx.doi.org/10.1007/s10270-014-0437-x">Least-change Bidirectional Model Transformation with QVT-R and ATL</a>. Software and System Modeling, 2016.</li>
+</ul>
+The full list of publications is best consulted at <a href="http://dblp.uni-trier.de/pers/hd/m/Macedo:Nuno.html">DBLP</a> or <a href="https://scholar.google.pt/citations?user=reE2X6IAAAAJ&hl=en">Google Scholar</a> (or <a href="http://haslab.uminho.pt/nmacedo/publications">here</a>).
+
+<h3>CURRENT PROJECTS</h3>
+<dl class="projects">
+<dt>SAFER</dt><dd><em>Safety Verification for Robotic Software</em>, a COMPETE2020 project that aims to develop techniques to promote the verification of safety critical properties for robotic software controllers.</dd>
+<dt><a href="https://www.scalable40.eu/">ScalABLE4.0</a></dt><dd><em>Scalable Automation for Flexible Production Systems</em>, an H2020 project that aims to develop an open scalable production system framework that can be used efficiently and effectively to visualize, virtualize, construct, control, maintain and optimize production lines.</dd>
+<dt><a href="http://trust.di.uminho.pt/">TRUST</a></dt><dd><e>Trustworthy Software Design with Alloy</e>, a COMPETE2020 project that aims to develop a methodology for trustworthy software design that is both formal, unified, and lightweight around Alloy.</dd>
+<dt><a href="https://github.com/fccn/PTCRISync">PTCRIS</a></dt><dd><em>An ORCID-based Synchronization Framework for the Portuguese CRIS</em>, a project commissioned by FCT that aims to develop a synchronization framework for information exchange between the various national systems and international systems.</dd>
+</dl>
+
+<h3>PAST PROJECTS</h3>
+<dl class="projects">
+<dt><a href="http://ivy.di.uminho.pt/isg/index.php/NanoSTIMA-RL1-3">NanoSTIMA RL1.3</a></dt><dd><em>High-Assurance Medical Cyber-physical Systems</em>, a NORTE2020 project that aims to contribute to safer medical cyber-physical systems through the development of such design and analysis techniques.</dd>
+<dt><a href="http://fatbit.di.uminho.pt/">FATBIT</a></dt><dd><em>Foundations, Applications and Tools for Bidirectional Transformation</em>, a COMPETE project that aimed to propose effective bidirectional transformation frameworks for model-driven engineering, spreadsheet validation and transformation, and language-based editors defined with attribute grammars.</dd>
+<dt><a href="http://wiki.di.uminho.pt/twiki/bin/view/DI/FMHAS/BestCaseRL8">BEST CASE RL8</a></dt><dd><em>Languages and Tools for Critical Real-Time Systems</em>, an ON.2 project that aimed to contribute to a change to the current paradigm of secure ITC infrastructure, according to which the deployment and operation of a critical system implies security enforcement as a reactive process.</dd>
+</dl>
+
+<h3>SOFTWARE</h3>
+<dl class="projects">
+<dt><a href="https://github.com/nmacedo/Electrum">Electrum Analyzer</a></dt>
+<dd style="min-height: 2em;">is an extension of the Alloy Analyzer for the bounded model checking of Electrum models.</dd>
+<dt><a href="https://github.com/nmacedo/Pardinus">Pardinus</a></dt>
+<dd>is an extension of Kodkod with support for target-oriented, temporal and decomposed model finding.</dd>
+<dt><a href="https://github.com/fccn/PTCRISync">PTCRISync</a></dt>
+<dd>is an ORCID-based synchronization framework for CRIS's.</dd>
+<dt><a href="http://haslab.github.io/echo/">Echo</a></dt>
+<dd>is an Eclipse plug-in to operationalize QVT-R bidirectional model transformations using Alloy.</dd>
+</dl>
+
+<h3>CURRENT STUDENTS</h3>
+<dl class="people">
+<dt>André Santos</dt><dd>Co-supervision of the PhD thesis on “High-assurance Robotics Software”.</dd>
+<dt>Chong Liu</dt><dd>Co-supervision of the PhD thesis on “Lightweight Trustworthy High-level Software Design”.</dd>
+</dl>
+
+<h3>PAST STUDENTS</h3>
+<dl class="people">
+<dt>Eduardo Pessoa</dt><dd>Supervision of the MSc thesis on “Parallel Verification of Dynamic Systems with Rich Configurations”.</dd>
+<dt>José Pereira</dt><dd>Co-supervision of the MSc thesis on “A Web-based Social Environment for Alloy”.</dd>
+<dt>André Santos</dt><dd>Co-supervision of the MSc thesis on “Applying Coding Standards to the Robot Operating System”.</dd>
+<dt>Miguel Costa</dt><dd>Co-supervision of the MSc thesis on “Software Quality for the Robot Operating System”.</dd>
+</dl>
+
+<h3>TEACHING</h3>
+<dl class="courses">
+<dt>Imperative Programming (PI)</dt><dd>Spring 2018 (MIEI@UM, BSc)</dd>
+<dt>Computer Labs I (LI1)</dt><dd>Fall 2009, 2011, 2012, 2015 - 2017 (MIEI@UM, BSc)</dd>
+<dt>Functional Programming (PF)</dt><dd>Fall 2016 (LCC+MIEFis@UM), 2017 (MIEI@UM, BSc)</dd>
+<dt>Specification and Modelling (EM)</dt><dd>Spring 2015 (MIEI+MCC@UM, MSc)</dd>
+<dt>Applied Informatics (LAD)</dt><dd>Spring 2017 (LLA@UM, BSc)</dd>
+<dt>Software Development Labs (LDS)</dt><dd>Fall 2013 (LEI@IPP, BSc)</dd>
+</dl>
+
+Checkout the LI1 <a href="https://haslab.github.io/Teaching/LI1/">Hall of Fame</a> with the best student projects since 2013.
+
+</body>
+
+
+  
+</html>

@@ -1,0 +1,113 @@
+#wrap {
+    margin: 0px; 
+    padding: 10px; 
+    max-width: 1000px; 
+    min-width: 500px; 
+    margin: auto;
+}
+
+#header {}
+
+#sidebar { 
+    top:0px; 
+    width: 215px; 
+    float: left;
+    height: 100%; 
+    right auto; 
+    margin: 0 10 0 0; 
+    overflow: auto; 
+    font-size: 14px;
+}
+
+#content {
+    top:0px; 
+    margin-left: 225px; 
+    left auto; 
+    min-height:100px; 
+    margin: 0; 
+    overflow: auto;
+}
+
+#footer {
+    clear:both; 
+}
+
+#feed dt {
+    font-weight: bold;
+}
+
+#feed dd {
+    margin: 0;
+}
+
+dl.projects {
+
+}
+
+dl.projects dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+}
+
+dl.projects dd {
+    clear:right;
+    margin: 0 0 0 110px;
+    padding: 0 0 0.5em 0;
+}
+
+dl.people dt {
+    float: left;
+    clear: left;
+    width: 130px;
+    text-align: right;
+    font-weight: bold;
+}
+
+dl.people dd {
+    margin: 0 0 0 140px;
+    padding: 0 0 0.5em 0;
+}
+
+dl.courses dt {
+    float: left;
+    clear: left;
+    width: 270px;
+    text-align: right;
+    font-weight: bold;
+}
+
+dl.courses dd {
+    margin: 0 0 0 280px;
+    padding: 0 0 0.5em 0;
+}
+
+.icon {
+    margin: 1px;
+    width: 24px;
+    height: 24px;
+}
+
+ul {
+    padding: 0 0 0 20px;
+}
+
+li {
+    margin: 0 0 0.5em 0;
+}
+
+a:link {
+    color: rgb(31,143,176);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(31,143,176);
+    text-decoration: none;
+}
+
+body {
+	font-family: 'RobotoDraft','Roboto','Helvetica Neue, Helvetica, Arial',sans-serif;
+}
