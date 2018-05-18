@@ -111,3 +111,11 @@ a:visited {
 body {
 	font-family: 'RobotoDraft','Roboto','Helvetica Neue, Helvetica, Arial',sans-serif;
 }
+
+h2 {
+    margin-bottom: 4px;
+}
+
+hr {
+border-color: rgb(250,250,250);
+}
