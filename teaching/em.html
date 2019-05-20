@@ -1,0 +1,97 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7987157-3"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-7987157-3');
+  </script>
+
+		<meta charset="UTF-8" />
+		<title>Nuno Macedo</title>
+		<meta name="author"   content="Nuno Macedo" />
+		<meta name="keywords" content="Nuno Macedo, PhD, Bidirectional Transformations, UM, Braga, Minho" />
+		<meta name="description" content="Home page of Nuno Macedo" />
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="text/javascript" src="https://rss2json.com/gfapi.js"></script>
+
+    <script type="text/javascript">
+
+    google.load("feeds", "1");
+
+    function initialize() {
+      var feed = new google.feeds.Feed("http://haslab.uminho.pt/nmacedo/feed/announcement");
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.getElementById("feed");
+          var div = document.createElement("dl");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            if (entry.link.indexOf("announcements") >= 0){
+            var dt = document.createElement("dt");
+            dt.appendChild(document.createTextNode(entry.publishedDate.substring(0,10)));
+            var dd = document.createElement("dd");
+            var a = document.createElement("a");
+            a.appendChild(document.createTextNode(entry.title));
+            var l = document.createAttribute("href");
+            l.value = entry.link;
+            a.setAttributeNode(l);
+            dd.appendChild(a);
+            div.appendChild(dt);
+            div.appendChild(dd);
+          }
+          }
+          container.appendChild(div);
+        }
+      });
+    }
+    google.setOnLoadCallback(initialize);
+
+    </script>
+
+ 	</head>
+   	    <body>
+<body>
+  <div id="wrap">
+    <div id="header">
+
+<h2>Nuno Macedo</h2>
+Researcher @ INESC TEC &amp; University of Minho
+<hr>
+<h4>Especificação e Modelação</h4>
+<p>This is a list of the material developed for the <i>Especificação e Modelação</i> course.</p>
+
+</div>
+    <div id="sidebar"><h4>Contacts</h4>
+    <p>Departamento de Informática<br>
+       Universidade do Minho<br>
+       Campus de Gualtar<br>
+       4710-057 Braga, Portugal</p>
+
+    <p>nuno (dot) m (dot) macedo (at) inesctec (dot) pt</p>
+      <p><a  href="https://github.com/nmacedo" rel="nofollow"><img src="https://github.githubassets.com/favicon.ico" class="icon" /></a><a  href="https://scholar.google.pt/citations?user=reE2X6IAAAAJ&amp;hl=en" rel="nofollow"><img src="https://scholar.google.pt/favicon-png.ico" class="icon" /></a><a  href="http://dblp.uni-trier.de/pers/hd/m/Macedo:Nuno.html" rel="nofollow"><img src="http://dblp.uni-trier.de/img/favicon.ico" class="icon" /></a><a href="http://orcid.org/0000-0002-4817-948X" rel="nofollow"><img src="http://orcid.org/sites/all/themes/orcidResponsive/apple-touch-icon.png" class="icon" /></a><a  href="https://www.cienciavitae.pt/en/AC11-B15D-DDBD" rel="nofollow"><img src="https://www.cienciavitae.pt/portal/javax.faces.resource/icons/cienciavitae.ico.xhtml?ln=images" class="icon" /></a><a href="https://www.scopus.com/authid/detail.uri?authorId=55415518200" rel="nofollow"><img src="https://www.scopus.com/static/images/favicon.ico?ver=1.0" class="icon" /></a><a  href="http://www.researcherid.com/rid/A-1539-2013" rel="nofollow"><img src="http://images.webofknowledge.com/WOKRS517B2.3/images/RID/r.ico" class="icon" /></a><a  href="http://haslab.uminho.pt/nmacedo/" rel="nofollow"><img src="http://haslab.uminho.pt/sites/default/files/haslab_favicon.ico" class="icon" /></a></p>
+
+<div id="feed"></div>
+  </div>
+
+<div id="content">
+
+<h4>Submitted</h4>
+<ul>
+<li><article class="publication">
+Slides presenting the NuSMV tool, <a href="em/NuSMV1.pdf">part 1</a> and <a href="em/NuSMV2.pdf">part 2</a>.
+</article></li>
+<li><article class="publication">
+Example <a href="tla_examples.zip">exercises</a> for TLA+ and TLC.
+</article></li>
+<li><article class="publication">
+<a href="https://github.com/haslab/Alloy4Fun/wiki/Examples">Exercises</a> for Alloy with auto-grading through Alloy4Fun.
+</article></li>
+</ul>
+
+</body>
+ 
+</html>
