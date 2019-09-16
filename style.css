@@ -119,3 +119,138 @@ h2 {
 hr {
 border-color: rgb(250,250,250);
 }
+
+
+.tut, .model, .app, .doi, 
+.slides, .pdf, .video, .data, 
+.page, .poster { 
+    position: relative; 
+}
+
+.tut::before, .model::before, .app::before, 
+.doi::before, .pdf::before, .slides::before, 
+.video::before, .data::before, .page::before,
+.poster::before {
+  display: inline-block;
+  position: absolute; bottom: 50%;
+  background: #000; color: #FFF; padding: 5px; border-radius: 5px;
+  opacity:0; transition:0.3s; overflow:hidden;
+  pointer-events: none;
+}
+
+.data::before {
+  content: "data"; /* print em-space with class text */
+}
+
+.poster::before {
+  content: "poster"; /* print em-space with class text */
+}
+
+.tut::before {
+  content: "tutorial"; /* print em-space with class text */
+}
+
+.video::before {
+  content: "video"; /* print em-space with class text */
+}
+
+.slides::before {
+  content: "slides"; /* print em-space with class text */
+}
+
+.pdf::before {
+  content: "PDF"; /* print em-space with class text */
+}
+
+.doi::before {
+  content: "DOI"; /* print em-space with class text */
+}
+
+.app::before {
+  content: "software"; /* print em-space with class text */
+}
+
+.model::before {
+  content: "models"; /* print em-space with class text */
+}
+
+.page::before {
+  content: "webpage"; /* print em-space with class text */
+}
+
+.model:hover::before, .app:hover::before, .tut:hover::before, 
+.doi:hover::before, .slides:hover::before, .pdf:hover::before, 
+.video:hover::before, .data:hover::before, .page:hover::before,
+.poster:hover::before { 
+    opacity:1; bottom: 100%;
+}
+
+.iconsm a {
+   display: inline-block;
+   margin: 0 0px 0 0;
+}
+
+.iconsm span {
+   margin: 0 5px 0 0;
+}
+
+.model::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f542";
+  font-weight: 900;
+}
+
+.app::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f187";
+  font-weight: 900;
+}
+
+.poster::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1c5";
+  font-weight: 900;
+}
+
+.slides::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f51b";
+  font-weight: 900;
+}
+
+.video::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f008";
+  font-weight: 900;
+}
+
+.tut::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f518";
+  font-weight: 900;
+}
+
+.pdf::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1c1";
+  font-weight: 400;
+}
+
+.data::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1c0";
+  font-weight: 600;
+}
+
+.page::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c1";
+  font-weight: 600;
+}
+
+.doi::after {
+  font-family: "Academicons";
+  content: "\e97e";
+  font-weight: 400;
+}
+
