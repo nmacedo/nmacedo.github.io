@@ -125,12 +125,49 @@ border-color: rgb(250,250,250);
 .slides, .pdf, .video, .data, 
 .page, .poster { 
     position: relative; 
+
 }
 
-.tut::before, .model::before, .app::before, 
-.doi::before, .pdf::before, .slides::before, 
-.video::before, .data::before, .page::before,
-.poster::before {
+.model a {
+   color: rgb(40,73,176);
+}
+
+.tut a {
+   color: rgb(176,76,49);
+}
+
+.app a {
+   color: rgb(176,132,14);
+}
+
+.doi a {
+   color: rgb(23,176,128);
+}
+
+.slides a {
+   color: rgb(142,27,29);
+}
+
+.video a {
+   color: rgb(78,143,41);
+}
+
+.data a {
+   color: rgb(143,65,34);
+}
+
+.page a {
+   color: rgb(13,143,122);
+}
+
+.poster a {
+   color: rgb(142,20,143);
+}
+
+.tut::after, .model::after, .app::after, 
+.doi::after, .pdf::after, .slides::after, 
+.video::after, .data::after, .page::after,
+.poster::after {
   display: inline-block;
   position: absolute; bottom: 50%;
   background: #000; color: #FFF; padding: 5px; border-radius: 5px;
@@ -138,50 +175,50 @@ border-color: rgb(250,250,250);
   pointer-events: none;
 }
 
-.data::before {
+.data::after {
   content: "data"; /* print em-space with class text */
 }
 
-.poster::before {
+.poster::after {
   content: "poster"; /* print em-space with class text */
 }
 
-.tut::before {
+.tut::after {
   content: "tutorial"; /* print em-space with class text */
 }
 
-.video::before {
+.video::after {
   content: "video"; /* print em-space with class text */
 }
 
-.slides::before {
+.slides::after {
   content: "slides"; /* print em-space with class text */
 }
 
-.pdf::before {
+.pdf::after {
   content: "PDF"; /* print em-space with class text */
 }
 
-.doi::before {
+.doi::after {
   content: "DOI"; /* print em-space with class text */
 }
 
-.app::before {
+.app::after {
   content: "software"; /* print em-space with class text */
 }
 
-.model::before {
+.model::after {
   content: "models"; /* print em-space with class text */
 }
 
-.page::before {
+.page::after {
   content: "webpage"; /* print em-space with class text */
 }
 
-.model:hover::before, .app:hover::before, .tut:hover::before, 
-.doi:hover::before, .slides:hover::before, .pdf:hover::before, 
-.video:hover::before, .data:hover::before, .page:hover::before,
-.poster:hover::before { 
+.model:hover::after, .app:hover::after, .tut:hover::after, 
+.doi:hover::after, .slides:hover::after, .pdf:hover::after, 
+.video:hover::after, .data:hover::after, .page:hover::after,
+.poster:hover::after { 
     opacity:1; bottom: 100%;
 }
 
@@ -190,65 +227,68 @@ border-color: rgb(250,250,250);
    margin: 0 0px 0 0;
 }
 
-.iconsm span {
-   margin: 0 5px 0 0;
+.icons {
+  margin-top: 2px;
 }
 
-.model::after {
+.iconsm span {
+   margin: 0 4px 0 0;
+   border: 1px solid;
+   border-radius: 11px;
+   padding: 2px 3px;
+   font-size: 12px;
+}
+
+.model .icon::before, .app .icon::before, .tut .icon::before, 
+.doi .icon::before, .slides .icon::before, .pdf .icon::before, 
+.video .icon::before, .data .icon::before, .page .icon::before,
+.poster .icon::before { 
   font-family: "Font Awesome 5 Free";
   content: "\f542";
   font-weight: 900;
+  margin-right: 2px;
 }
 
-.app::after {
-  font-family: "Font Awesome 5 Free";
+.model .icon::before {
+  content: "\f542";
+}
+
+.app .icon::before {
   content: "\f187";
-  font-weight: 900;
 }
 
-.poster::after {
-  font-family: "Font Awesome 5 Free";
+.poster .icon::before {
   content: "\f1c5";
-  font-weight: 900;
 }
 
-.slides::after {
-  font-family: "Font Awesome 5 Free";
+.slides .icon::before {
   content: "\f51b";
-  font-weight: 900;
 }
 
-.video::after {
-  font-family: "Font Awesome 5 Free";
+.video .icon::before {
   content: "\f008";
-  font-weight: 900;
 }
 
-.tut::after {
-  font-family: "Font Awesome 5 Free";
+.tut .icon::before {
   content: "\f518";
-  font-weight: 900;
 }
 
-.pdf::after {
-  font-family: "Font Awesome 5 Free";
+.pdf .icon::before {
   content: "\f1c1";
   font-weight: 400;
 }
 
-.data::after {
-  font-family: "Font Awesome 5 Free";
+.data .icon::before {
   content: "\f1c0";
   font-weight: 600;
 }
 
-.page::after {
-  font-family: "Font Awesome 5 Free";
+.page .icon::before {
   content: "\f0c1";
   font-weight: 600;
 }
 
-.doi::after {
+.doi .icon::before {
   font-family: "Academicons";
   content: "\e97e";
   font-weight: 400;
