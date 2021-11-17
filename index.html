@@ -19,39 +19,7 @@
 		<link rel="stylesheet" type="text/css" href="./style.css" />
     <script type="text/javascript" src="https://rss2json.com/gfapi.js"></script>
 
-    <script type="text/javascript">
 
-    google.load("feeds", "1");
-
-    function initialize() {
-      var feed = new google.feeds.Feed("http://haslab.uminho.pt/nmacedo/feed");
-      feed.load(function(result) {
-        if (!result.error) {
-          var container = document.getElementById("feed");
-          var div = document.createElement("dl");
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            if (entry.link.indexOf("announcements") >= 0){
-            var dt = document.createElement("dt");
-            dt.appendChild(document.createTextNode(entry.publishedDate.substring(0,10)));
-            var dd = document.createElement("dd");
-            var a = document.createElement("a");
-            a.appendChild(document.createTextNode(entry.title));
-            var l = document.createAttribute("href");
-            l.value = entry.link;
-            a.setAttributeNode(l);
-            dd.appendChild(a);
-            div.appendChild(dt);
-            div.appendChild(dd);
-          }
-          }
-          container.appendChild(div);
-        }
-      });
-    }
-    google.setOnLoadCallback(initialize);
-
-    </script>
 
  	</head>
    	    <body>
@@ -73,10 +41,28 @@ Assistant Professor @ FEUP &amp; INESC TEC
        Rua Dr. Roberto Frias<br>
        4200-465 Porto, Portugal</p>
 
-    <p>nuno (dot) m (dot) macedo (at) inesctec (dot) pt</p>
-      <p><a  href="https://github.com/nmacedo" rel="nofollow"><img src="https://github.githubassets.com/favicon.ico" class="icon" /></a><a  href="https://scholar.google.pt/citations?user=reE2X6IAAAAJ&amp;hl=en" rel="nofollow"><img src="https://scholar.google.pt/favicon-png.ico" class="icon" /></a><a  href="http://dblp.uni-trier.de/pers/hd/m/Macedo:Nuno.html" rel="nofollow"><img src="http://dblp.uni-trier.de/img/favicon.ico" class="icon" /></a><a href="http://orcid.org/0000-0002-4817-948X" rel="nofollow"><img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_128x128.png" class="icon" /></a><a  href="https://www.cienciavitae.pt/en/AC11-B15D-DDBD" rel="nofollow"><img src="https://www.cienciavitae.pt/portal/javax.faces.resource/icons/cienciavitae.ico.xhtml?ln=images" class="icon" /></a><a href="https://www.scopus.com/authid/detail.uri?authorId=55415518200" rel="nofollow"><img src="https://www.scopus.com/static/images/favicon.ico?ver=1.0" class="icon" /></a><a  href="http://www.researcherid.com/rid/A-1539-2013" rel="nofollow"><img src="http://images.webofknowledge.com/WOKRS517B2.3/images/RID/r.ico" class="icon" /></a><a  href="http://haslab.uminho.pt/nmacedo/" rel="nofollow"><img src="http://haslab.uminho.pt/sites/default/files/haslab_favicon.ico" class="icon" /></a></p>
+    <p>nmacedo (at) fe (dot) up (dot) pt</p>
+      <p><a  href="https://github.com/nmacedo" rel="nofollow"><img src="https://github.githubassets.com/favicon.ico" class="icon" /></a><a  href="https://scholar.google.pt/citations?user=reE2X6IAAAAJ&amp;hl=en" rel="nofollow"><img src="https://scholar.google.pt/favicon-png.ico" class="icon" /></a><a  href="http://dblp.uni-trier.de/pers/hd/m/Macedo:Nuno.html" rel="nofollow"><img src="http://dblp.uni-trier.de/img/favicon.ico" class="icon" /></a><a href="http://orcid.org/0000-0002-4817-948X" rel="nofollow"><img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_128x128.png" class="icon" /></a><a  href="https://www.cienciavitae.pt/en/AC11-B15D-DDBD" rel="nofollow"><img src="https://www.cienciavitae.pt/portal/javax.faces.resource/icons/cienciavitae.ico.xhtml?ln=images" class="icon" /></a><a href="https://www.scopus.com/authid/detail.uri?authorId=55415518200" rel="nofollow"><img src="https://www.scopus.com/static/images/favicon.ico?ver=1.0" class="icon" /></a><a  href="http://www.researcherid.com/rid/A-1539-2013" rel="nofollow"><img src="http://images.webofknowledge.com/WOKRS517B2.3/images/RID/r.ico" class="icon" /></a><a  href="https://www.inesctec.pt/en/people/nuno-moreira-macedo" rel="nofollow"><img src="https://www.inesctec.pt/assets/favicon/apple-touch-icon.png" class="icon" /></a></p>
 
-<div id="feed"></div>
+<div id="feed">
+<dl>
+<dt>2021, November</dt><dd><a href="news.html#new2105">Electrum is now Alloy 6</a><dd>
+<dt>2021, September</dt><dd><a href="news.html#new2105">SpecRep recommended for funding</a><dd>
+<dt>2021, May</dt><dd><a href="news.html#new2104">HAROS Tutorial at IROS</a><dd>
+<dt>2021, May</dt><dd><a href="news.html#new2103">Paper accepted at SCP</a><dd>
+<dt>2021, April</dt><dd><a href="news.html#new2102">Paper accepted at IJRC</a><dd>
+<dt>2021, March</dt><dd><a href="news.html#new2101">Paper accepted at RoSE</a><dd>
+<dt>2020, December</dt><dd><a href="news.html#new2008">Paper award</a><dd>
+<dt>2020, November</dt><dd><a href="news.html#new2007">Paper award</a><dd>
+<dt>2020, November</dt><dd><a href="news.html#new2006">Paper accepted at SBMF</a><dd>
+<dt>2020, September</dt><dd><a href="news.html#new2005">Moved to DEI/FEUP</a><dd>
+<dt>2020, September</dt><dd><a href="news.html#new2004">DigiLightRail project</a><dd>
+<dt>2020, July</dt><dd><a href="news.html#new2003">Paper accepted at IROS</a><dd>
+<dt>2020, April</dt><dd><a href="news.html#new2002">Papers accepted at ABZ</a><dd>
+<dt>2020, February</dt><dd><a href="news.html#new2001">Papers accepted at IRC</a><dd>
+<dt>2019, September<dt><dd><a href="news.html#new1905">Paper accepted at SETTA.</a></dd>
+</dl>
+</div>
   </div>
 
 <div id="content">

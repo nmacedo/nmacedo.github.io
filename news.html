@@ -1,0 +1,162 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7987157-3"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-7987157-3');
+  </script>
+
+    <meta charset="UTF-8" />
+    <title>Nuno Macedo</title>
+    <meta name="author"   content="Nuno Macedo" />
+    <meta name="keywords" content="Nuno Macedo, PhD, Software engineering, Formal methods, Alloy, Electrum, Model finding, Bidirectional transformations" />
+    <meta name="description" content="Home page of Nuno Macedo" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="text/javascript" src="https://rss2json.com/gfapi.js"></script>
+
+    <script type="text/javascript">
+
+    google.load("feeds", "1");
+
+    function initialize() {
+      var feed = new google.feeds.Feed("http://haslab.uminho.pt/nmacedo/feed/announcement");
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.getElementById("feed");
+          var div = document.createElement("dl");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            if (entry.link.indexOf("announcements") >= 0){
+            var dt = document.createElement("dt");
+            dt.appendChild(document.createTextNode(entry.publishedDate.substring(0,10)));
+            var dd = document.createElement("dd");
+            var a = document.createElement("a");
+            a.appendChild(document.createTextNode(entry.title));
+            var l = document.createAttribute("href");
+            l.value = entry.link;
+            a.setAttributeNode(l);
+            dd.appendChild(a);
+            div.appendChild(dt);
+            div.appendChild(dd);
+          }
+          }
+          container.appendChild(div);
+        }
+      });
+    }
+    google.setOnLoadCallback(initialize);
+
+    </script>
+
+ 	</head>
+   	    <body>
+<body>
+  <div id="wrap">
+    <div id="header">
+
+<h2>Nuno Macedo</h2>
+Assistant Professor @ FEUP &amp; INESC TEC
+<hr>
+
+
+</div>
+    <div id="sidebar"><h4>Contacts</h4>
+    <p>Departamento de Engenharia Informática<br>
+       Rua Dr. Roberto Frias<br>
+       4200-465 Porto, Portugal</p>
+
+    <p>nmacedo (at) fe (dot) up (dot) pt</p>
+      <p><a  href="https://github.com/nmacedo" rel="nofollow"><img src="https://github.githubassets.com/favicon.ico" class="icon" /></a><a  href="https://scholar.google.pt/citations?user=reE2X6IAAAAJ&amp;hl=en" rel="nofollow"><img src="https://scholar.google.pt/favicon-png.ico" class="icon" /></a><a  href="http://dblp.uni-trier.de/pers/hd/m/Macedo:Nuno.html" rel="nofollow"><img src="http://dblp.uni-trier.de/img/favicon.ico" class="icon" /></a><a href="http://orcid.org/0000-0002-4817-948X" rel="nofollow"><img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_128x128.png" class="icon" /></a><a  href="https://www.cienciavitae.pt/en/AC11-B15D-DDBD" rel="nofollow"><img src="https://www.cienciavitae.pt/portal/javax.faces.resource/icons/cienciavitae.ico.xhtml?ln=images" class="icon" /></a><a href="https://www.scopus.com/authid/detail.uri?authorId=55415518200" rel="nofollow"><img src="https://www.scopus.com/static/images/favicon.ico?ver=1.0" class="icon" /></a><a  href="http://www.researcherid.com/rid/A-1539-2013" rel="nofollow"><img src="http://images.webofknowledge.com/WOKRS517B2.3/images/RID/r.ico" class="icon" /></a><a  href="https://www.inesctec.pt/en/people/nuno-moreira-macedo" rel="nofollow"><img src="https://www.inesctec.pt/assets/favicon/apple-touch-icon.png" class="icon" /></a></p>
+
+<div id="feed"></div>
+  </div>
+
+<div id="content">
+
+
+</ul>
+
+<h4>NEWS</h4>
+<dl class="news">
+<dt><div class="date">2021, November</div> - <div class="new" id="new2105">Electrum is now Alloy 6.</div></dt><dd>The Electrum Analyzer has been officially integrated into the official <a href="https://alloytools.discourse.group/t/announcing-alloy-6/">release of Alloy 6</a>.</dd>
+<dt><div class="date">2021, September</div> - <div class="new" id="new2105">SpecRep recommended for funding.</div></dt><dd>Our SpecRep project on automatic specification repair has been recommended for funding by the FCT, and will start in January.</dd>
+<dt><div class="date">2021, May</div> - <div class="new" id="new2104">HAROS Tutorial at IROS.</div></dt><dd>Our <a href="https://haslab.github.io/SAFER/iros21-tutorial">tutorial</a> on Improving the Software Quality of ROS Applications with HAROS has been accepted by the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).</dd>
+<dt><div class="date">2021, May</div> - <div class="new" id="new2103">Paper accepted at SCP.</div></dt><dd>Our extended experience report on teaching Alloy with an <a href="http://alloy4fun.inesctec.pt/">automated assessment platform</a> has been accepted at the Science of Computer Programming (SCP) journal.</dd>
+<dt><div class="date">2021, April</div> - <div class="new" id="new2102">Paper accepted at IJRC.</div></dt><dd>Our extended paper on <a href="http://rosy.inesctec.pt/">ROSY</a>, an elegant language to teach the pure reactive nature of robot programming, has just been accepted at the International Journal of Robotic Computing (IJRC).</dd>
+<dt><div class="date">2021, March</div> - <div class="new" id="new2101">Paper accepted at RoSE.</div></dt><dd>Our work on <a href="https://github.com/git-afsantos/haros">HAROS</a>, a framework for promoting high-assurance ROS software, has been accepted at the 3rd International Workshop on Robotics Software Engineering (RoSE).</dd>
+
+<dt><div class="date">2020, December</div> - <div class="new" id="new2008">Paper award.</div></dt><dd>Our work on merging cloned Alloy models with colorful refactorings has been awarded the 2nd best paper award at SBMF'20.</dd>
+<dt><div class="date">2020, November</div> - <div class="new" id="new2007">Paper award.</div></dt><dd>Our paper on <a href="http://rosy.inesctec.pt/">ROSY</a> has received the Gerhard Kraetzschmar Award of IRC'20 for contributions in the field of "Software Development for Robotics".</dd>
+<dt><div class="date">2020, November</div> - <div class="new" id="new2006">Paper accepted at SBMF.</div></dt><dd>Our work on merging cloned Alloy models with colorful refactorings has been accepted at the 23rd Brazilian Symposium on Formal Methods (SBMF).</dd>
+<dt><div class="date">2020, September</div> - <div class="new" id="new2005">Moved to DEI/FEUP.</div></dt><dd>I've moved to DEI/FEUP as an Assistant Professor.</dd>
+<dt><div class="date">2020, September</div> - <div class="new" id="new2004">DigiLightRail project.</div></dt><dd>We've kickstarted our project with EFACEC on the verification of topological design models.</dd>
+<dt><div class="date">2020, July</div> - <div class="new" id="new2003">Paper accepted at IROS.</div></dt><dd>Our work on the verification of system-wide safety properties of ROS applications has been accepted at IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).</dd>
+<dt><div class="date">2020, April</div> - <div class="new" id="new2002">Papers accepted at ABZ.</div></dt><dd>Our experience report on teaching Alloy with an <a href="http://alloy4fun.inesctec.pt/">automated assessment platform</a>, and an answer to the case study call on validating multiple variants of an <a href="https://github.com/haslab/Electrum2/wiki/ELS">automotive light system</a> with Electrum, have been accepted at ABZ'20.</dd>
+<dt><div class="date">2020, February</div> - <div class="new" id="new2001">Papers accepted at IRC.</div></dt><dd>Our paper on <a href="http://rosy.inesctec.pt/">ROSY</a>, an elegant language to teach the pure reactive nature of robot programming, has just been accepted at the International Conference on Robotic Computing (IRC). </dd>
+
+<dt><div class="date">2019, September</div> - <div class="new" id="new1905">Paper accepted at SETTA.</div></dt><dd>Our paper on the analysis of software design variants with a colorful Alloy has just been accepted at the International Symposium on Dependable Software Engineering. Theories, Tools, and Applications (SETTA).</dd>
+<dt><div class="date">2019, September</div> - <div class="new" id="new1904">Paper accepted at F-IDE.</div></dt><dd>Our paper on simulation under arbitrary temporal logic constraints has just been accepted at the Workshop on Formal Integrated Development Environment (F-IDE) at FM.</dd>
+<dt><div class="date">2019, September</div> - <div class="new" id="new1903">Alloy/Electrum Tutorial at FM.</div></dt><dd>We will be giving a <a href="https://haslab.github.io/TRUST/tutorial.html">tutorial</a> on Formal Software Design with Alloy and Electrum at the 3rd World Congress on Formal Methods in October.</dd>
+<dt><div class="date">2019, July</div> - <div class="new" id="new1902">Paper accepted at STTT.</div></dt><dd>Our extended work on the <a href="https://github.com/haslab/Electrum2/wiki/ERTMS">ERTMS</a> case study has been accepted for publication at the International Journal on Software Tools for Technology Transfer (STTT).</dd>
+<dt><div class="date">2019, February</div> - <div class="new" id="new1901">Paper accepted at IRC.</div></dt><dd>Our work on the Static-time Extraction and Analysis of the ROS Computation Graph has just been accepted at the 3rd International Conference on Robotic Computing (IRC).</dd>
+
+<dt><div class="date">2018, September</div> - <div class="new" id="new1811">Paper accepted at A-TEST.</div></dt><dd>Our work on Property-based Testing for the Robot Operating System has been accepted at the 9th International Workshop on Automated Software Testing (A-TEST).</dd>
+<dt><div class="date">2018, July</div> - <div class="new" id="new1809">Experience report at ICFP.</div></dt><dd>Our experience report about the re-organization of the LI1 unit has been accepted at the 2018 International Conference on Functional Programming (ICFP).</dd>
+<dt><div class="date">2018, July</div> - <div class="new" id="new1808">Electrum at ASE.</div></dt><dd>Our Electrum tool demo has been accepted at the 33rd IEEE/ACM International Conference on Automated Software Engineering (ASE).</dd>
+<dt><div class="date">2018, June</div> - <div class="new" id="new1807">Electrum video and tutorial.</div></dt><dd>If you're interested in getting started with Electrum, checkout this introductory <a href="https://www.youtube.com/watch?v=FbjlpvjgMDA">video</a> and this step-by-step <a href="https://github.com/haslab/Electrum/wiki/Tutorial">tutorial</a>.</dd>
+<dt><div class="date">2018, May</div> - <div class="new" id="new1806">Workshop on the Future of Alloy.</div></dt><dd>The TRUST team has presented its work at the <a href="http://alloytools.org/workshop/">Workshop</a> on the Future of Alloy.</dd>
+<dt><div class="date">2018, May</div> - <div class="new" id="new1805">Paper accepted at F-IDE.</div></dt><dd>Our preliminary work on improving the visualization of Alloy instances has just been accepted at the Workshop on Formal Integrated Development Environment (F-IDE).</dd>
+<dt><div class="date">2018, April</div> - <div class="new" id="new1804">SAFER recommended for funding.</div></dt><dd>Our SAFER project on promoting the safety of robotic software has been recommended for funding by the FCT.</dd>
+<dt><div class="date">2018, April</div> - <div class="new" id="new1803">Papers accepted at ABZ.</div></dt><dd>We've just had two papers accepted at ABZ, one on the <a href="https://github.com/haslab/Electrum2/wiki/ERTMS">ERTMS</a> case study and a possible action layer for Electrum.</dd>
+<dt><div class="date">2018, April</div> - <div class="new" id="new1802">Hall of Fame LI1.</div></dt><dd>We've launched a "<a href="https://haslab.github.io/Teaching/LI1/">Hall of Fame</a>" for the best LI1 student projects.</dd>
+<dt><div class="date">2018, February</div> - <div class="new" id="new1801">Electrum v1.0</div></dt><dd>Version 1.0 of the Electrum Analyzer has been <a href="https://github.com/haslab/Electrum/releases/tag/v1.0">released</a>, as well as the underlying Pardinus solver <a href="https://github.com/haslab/Pardinus/releases/tag/v1.0">v1.0</a>.</dd>
+
+<dt><div class="date">2017, September</div> - <div class="new" id="new1708">PTCRISync v1.1</div></dt><dd>Version 1.1 of the PTCRISync synchronization framework has been <a href="https://github.com/fccn/PTCRISync/releases/tag/v1.1">released</a>.</dd>
+<dt><div class="date">2017, July</div> - <div class="new" id="new1707">Paper accepted at IROS.</div></dt><dd>Our paper on mining the usage patterns of ROS primitives in robotic software has been accepted at the 2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).</dd>
+<dt><div class="date">2017, July</div> - <div class="new" id="new1706">Paper accepted at ATVA.</div></dt><dd>Our paper on exploiting partial knowledge for efficient model finding has just been accepted at the 15th International Symposium on Automated Technology for Verification and Analysis (ATVA).</dd>
+<dt><div class="date">2017, June</div> - <div class="new" id="new1705">PTCRISync at ORCID.</div></dt><dd>A post divulging the PTCRISync has just been published at the ORCID blog.</dd>
+<dt><div class="date">2017, April</div> - <div class="new" id="new1704">Best Students programme.</div></dt><dd>We've just received the students from the Best Students programme at UMinho 2017 at our laboratory.</dd>
+<dt><div class="date">2017, April</div> - <div class="new" id="new1703">PTCRISync v1.0.</div></dt><dd>Version 1.0 of the PTCRISync synchronization framework has been <a href="https://github.com/fccn/PTCRISync/releases/tag/v1.0">released</a>.</dd>
+<dt><div class="date">2017, March</div> - <div class="new" id="new1702">Paper accepted at FormaliSE.</div></dt><dd>Our paper on the verification of a ROS-based robotic system using timed automata has been accepted at the FME Workshop on Formal Methods in Software Engineering (FormaliSE).</dd>
+<dt><div class="date">2017, February</div> - <div class="new" id="new1701">Joined ScalABLE 4.0 Project.</div></dt><dd>I joined the H2020 ScalABLE 4.0 project on scalable automation for flexible production systems.</dd>
+
+<dt><div class="date">2016, December</div> - <div class="new" id="new1608">New MSc's.</div></dt><dd>Eduardo Pessoa and José Pereira have successfully defended their MSc theses on trustworthy software design.</dd>
+<dt><div class="date">2016, December</div> - <div class="new" id="new1607">MAP-i Students Visit HASLab.</div></dt><dd>We've just received the new MAP-i students at HASLab.</dd>
+<dt><div class="date">2016, September</div> - <div class="new" id="new1606">Paper accepted at TSE.</div></dt><dd>Our survey on model repair techniques has just been accepted at the IEEE Transactions on Software Engineering (TSE).</dd>
+<dt><div class="date">2016, September</div> - <div class="new" id="new1605">TRUST Kickoff.</div></dt><dd>The TRUST project has just kicked off with a joint <a href="http://haslab.github.io/TRUST/kickoff.html">workshop</a> with the DALI project.</dd>
+<dt><div class="date">2016, July</div> - <div class="new" id="new1604">Paper accepted at IROS.</div></dt><dd>Our paper on the quality assessment of ROS repositories has been accepted at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).</dd>
+<dt><div class="date">2016, June</div> - <div class="new" id="new1603">Paper accepted at MEDI.</div></dt><dd>Our paper on a formalization of ETL patterns has been accepted at the International Conference on Model and Data Engineering (MEDI).</dd>
+<dt><div class="date">2016, April</div> - <div class="new" id="new1602">Joined NanoSTIMA project.</div></dt><dd>I joined the NanoSTIMA project on high-assurance medical cyber-physical systems as a post-doctoral researcher.</dd>
+<dt><div class="date">2016, May</div> - <div class="new" id="new1601">Paper accepted at FSE.</div></dt><dd>Our paper on a temporal extension to the Alloy language has been accepted at the ACM SIGSOFT International Symposium on the Foundations of Software Engineering (FSE).</dd>
+
+<dt><div class="date">2015, December</div> - <div class="new" id="new1503">New MSc's.</div></dt><dd>André Santos and Miguel Costa have successfully defended their MSc theses on ROS software quality.</dd>
+<dt><div class="date">2015, August</div> - <div class="new" id="new1502">TRUST recommended for funding.</div></dt><dd>Our project on trustworthy software design has been recommended for funding.</dd>
+<dt><div class="date">2015, August</div> - <div class="new" id="new1501">Paper at F1000Research.</div></dt><dd>Our paper on an ORCID-based synchronization framework has been accepted at F1000Research in the ORCID-Casrai joint conference channel.</dd>
+
+<dt><div class="date">2014, December</div> - <div class="new" id="new1407">Paper accepted at FASE.</div></dt><dd>Our paper on scenario exploration has been accepted at the 18th International Conference on Fundamental Approaches to Software Engineering (FASE).</dd>
+<dt><div class="date">2014, December</div> - <div class="new" id="new1406">PTCRISync project.</div></dt><dd>We have been commissioned by the FCT to participate in the development of an ORCID-based synchronization framework for the Portuguese Current Research Information System (PTCRIS).</dd>
+<dt><div class="date">2014, November</div> - <div class="new" id="new1405">Joined BESTCASE project.</div></dt><dd>I've joined the BESTCASE project on languages and tools for critical real time systems as a post-doctoral researcher.</dd>
+<dt><div class="date">2014, November</div> - <div class="new" id="new1404">PhD thesis defended.</div></dt><dd>I've successfully defended my PhD thesis at the University of Minho.</dd>
+<dt><div class="date">2014, October</div> - <div class="new" id="new1403">Paper accepted at SoSyM.</div></dt><dd>Our paper on least-change bidirectional model transformations has been accepted at the Springer's International Journal on Software and Systems Modeling (SoSyM).</dd>
+<dt><div class="date">2014, April</div> - <div class="new" id="new1402">Paper accepted at VL/HCC.</div></dt><dd>Our paper on bidirectional spreadsheet formulas has been accepted at IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC).</dd>
+<dt><div class="date">2014, January</div> - <div class="new" id="new1401">Paper accepted at BX.</div></dt><dd>Our paper on multidirectional model transformation has been accepted at the International Workshop on Bidirectional Transformations (BX).</dd>
+
+<dt><div class="date">2013, December</div> - <div class="new" id="new1306">Paper accepted at FASE.</div></dt><dd>Our paper on target-oriented model finding has been accepted at the 17th International Conference on Fundamental Approaches to Software Engineering (FASE).</dd>
+<dt><div class="date">2013, November</div> - <div class="new" id="new1305">Echo at ASE.</div></dt><dd>I've just presented our tool Echo at ASE'13.</dd>
+<dt><div class="date">2013, October</div> - <div class="new" id="new1304">III FATBIT Meeting.</div></dt><dd>We've just presented our ongoing work at the III FATBIT Meeting.</dd>
+<dt><div class="date">2013, September</div> - <div class="new" id="new1303">Tool Demo accepted at ASE.</div></dt><dd>Our tool demo of Echo has been accepted at the IEEE/ACM International Conference on Automated Software Engineering (ASE).</dd>
+<dt><div class="date">2013, July</div> - <div class="new" id="new1302">II FATBIT Meeting.</div></dt><dd>We've just presented our ongoing work at the II FATBIT Meeting.</dd>
+<dt><div class="date">2013, June</div> - <div class="new" id="new1301">Paper accepted at BX.</div></dt><dd>Our paper on least-change bidirectional transformation has been accepted at the International Workshop on Bidirectional Transformations (BX).</dd>
+<dt><div class="date">2012, December</div> - <div class="new" id="new1202">Paper accepted at FASE.</div></dt><dd>Our paper on bidirectional QVT-R transformations has been accepted at the International Conference on Fundamental Approaches to Software Engineering (FASE).</dd>
+<dt><div class="date">2012, June</div> - <div class="new" id="new1201">Paper accepted at RAMiCS.</div></dt><dd>Our paper on relations as executable specifications has been accepted at the International Conference Relational and Algebraic Methods in Computer Science (RAMiCS).</dd>
+</dl>
+
+</body>
+ 
+</html>

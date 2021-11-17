@@ -36,6 +36,22 @@
     font-weight: bold;
 }
 
+.news dt {
+    font-weight: bold;
+}
+
+.news dd {
+    margin: 0px 0px 5px 0px;
+}
+
+.new {
+    display: inline-block;
+}
+
+.date {
+    display: inline-block;
+}
+
 #feed dd {
     margin: 0;
 }
