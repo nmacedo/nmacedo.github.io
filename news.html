@@ -18,41 +18,6 @@
     <meta name="keywords" content="Nuno Macedo, PhD, Software engineering, Formal methods, Alloy, Electrum, Model finding, Bidirectional transformations" />
     <meta name="description" content="Home page of Nuno Macedo" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script type="text/javascript" src="https://rss2json.com/gfapi.js"></script>
-
-    <script type="text/javascript">
-
-    google.load("feeds", "1");
-
-    function initialize() {
-      var feed = new google.feeds.Feed("http://haslab.uminho.pt/nmacedo/feed/announcement");
-      feed.load(function(result) {
-        if (!result.error) {
-          var container = document.getElementById("feed");
-          var div = document.createElement("dl");
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            if (entry.link.indexOf("announcements") >= 0){
-            var dt = document.createElement("dt");
-            dt.appendChild(document.createTextNode(entry.publishedDate.substring(0,10)));
-            var dd = document.createElement("dd");
-            var a = document.createElement("a");
-            a.appendChild(document.createTextNode(entry.title));
-            var l = document.createAttribute("href");
-            l.value = entry.link;
-            a.setAttributeNode(l);
-            dd.appendChild(a);
-            div.appendChild(dt);
-            div.appendChild(dd);
-          }
-          }
-          container.appendChild(div);
-        }
-      });
-    }
-    google.setOnLoadCallback(initialize);
-
-    </script>
 
  	</head>
    	    <body>
@@ -84,6 +49,10 @@ Assistant Professor @ FEUP &amp; INESC TEC
 
 <h4>NEWS</h4>
 <dl class="news">
+<dt><div class="date">2022, April</div> - <div class="new" id="new2203">Paper award.</div></dt><dd>Our ENASE paper on testing of message-oriented systems has been awarded the best paper award.</dd>
+<dt><div class="date">2022, February</div> - <div class="new" id="new2202">Paper accepted at ENASE.</div></dt><dd>Our work on testing of message-oriented systems has been accepted at the 17th International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE).</dd>
+<dt><div class="date">2022, January</div> - <div class="new" id="new2201">SpecRep has started.</div></dt><dd>The <a href="https://haslab.github.io/SpecRep/">SpecRep</a> project on specification repair I'm leading has just started.</dd>
+
 <dt><div class="date">2021, November</div> - <div class="new" id="new2105">Electrum is now Alloy 6.</div></dt><dd>The Electrum Analyzer has been officially integrated into the official <a href="https://alloytools.discourse.group/t/announcing-alloy-6/">release of Alloy 6</a>.</dd>
 <dt><div class="date">2021, September</div> - <div class="new" id="new2105">SpecRep recommended for funding.</div></dt><dd>Our SpecRep project on automatic specification repair has been recommended for funding by the FCT, and will start in January.</dd>
 <dt><div class="date">2021, May</div> - <div class="new" id="new2104">HAROS Tutorial at IROS.</div></dt><dd>Our <a href="https://haslab.github.io/SAFER/iros21-tutorial">tutorial</a> on Improving the Software Quality of ROS Applications with HAROS has been accepted by the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).</dd>
