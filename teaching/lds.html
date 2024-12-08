@@ -1,78 +1,58 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7987157-3"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-7987157-3');
-  </script>
-
-		<meta charset="UTF-8" />
-		<title>Nuno Macedo</title>
-		<meta name="author"   content="Nuno Macedo" />
-		<meta name="keywords" content="Nuno Macedo, PhD, Bidirectional Transformations, UM, Braga, Minho" />
-		<meta name="description" content="Home page of Nuno Macedo" />
-		<link rel="stylesheet" type="text/css" href="./style.css" />
-    <script type="text/javascript" src="https://rss2json.com/gfapi.js"></script>
-
-    <script type="text/javascript">
-
-    google.load("feeds", "1");
-
-    function initialize() {
-      var feed = new google.feeds.Feed("http://haslab.uminho.pt/nmacedo/feed/announcement");
-      feed.load(function(result) {
-        if (!result.error) {
-          var container = document.getElementById("feed");
-          var div = document.createElement("dl");
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            if (entry.link.indexOf("announcements") >= 0){
-            var dt = document.createElement("dt");
-            dt.appendChild(document.createTextNode(entry.publishedDate.substring(0,10)));
-            var dd = document.createElement("dd");
-            var a = document.createElement("a");
-            a.appendChild(document.createTextNode(entry.title));
-            var l = document.createAttribute("href");
-            l.value = entry.link;
-            a.setAttributeNode(l);
-            dd.appendChild(a);
-            div.appendChild(dt);
-            div.appendChild(dd);
-          }
-          }
-          container.appendChild(div);
-        }
-      });
-    }
-    google.setOnLoadCallback(initialize);
-
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7987157-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-7987157-3');
     </script>
 
- 	</head>
-   	    <body>
+
+    <meta charset="UTF-8" />
+    <title>Nuno Macedo</title>
+    <meta name="author"   content="Nuno Macedo" />
+    <meta name="keywords" content="Nuno Macedo, PhD, Software engineering, Formal methods, Alloy, Electrum, Model finding, Bidirectional transformations" />
+    <meta name="description" content="Home page of Nuno Macedo" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+
+  </head>
+        <body>
 <body>
   <div id="wrap">
     <div id="header">
 
 <h2>Nuno Macedo</h2>
-Researcher @ INESC TEC &amp; University of Minho
+Assistant Professor @ FEUP &amp; INESC TEC
 <hr>
 <h4>Laboratório de Desenvolvimento de Software</h4>
 <p>This is a list of the material developed for the <i>Laboratório de Desenvolvimento de Software</i> course at the Porto Polytechnic Institute.</p>
 
-</div>
-    <div id="sidebar"><h4>Contacts</h4>
-    <p>Departamento de Informática<br>
-       Universidade do Minho<br>
-       Campus de Gualtar<br>
-       4710-057 Braga, Portugal</p>
+<div id="sidebar"><h4>Contacts</h4>
+    <p>Departamento de Engenharia Informática<br>
+       Rua Dr. Roberto Frias<br>
+       4200-465 Porto, Portugal</p>
 
     <p>nmacedo (at) fe (dot) up (dot) pt</p>
-      <p><a  href="https://github.com/nmacedo" rel="nofollow"><img src="https://github.githubassets.com/favicon.ico" class="icon" /></a><a  href="https://scholar.google.pt/citations?user=reE2X6IAAAAJ&amp;hl=en" rel="nofollow"><img src="https://scholar.google.pt/favicon-png.ico" class="icon" /></a><a  href="https://dblp.uni-trier.de/pid/118/5967.html" rel="nofollow"><img src="http://dblp.uni-trier.de/img/favicon.ico" class="icon" /></a><a href="http://orcid.org/0000-0002-4817-948X" rel="nofollow"><img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_128x128.png" class="icon" /></a><a  href="https://www.cienciavitae.pt/en/AC11-B15D-DDBD" rel="nofollow"><img src="icons/cienciavitae.png" class="icon" /></a><a href="https://www.scopus.com/authid/detail.uri?authorId=55415518200" rel="nofollow"><img src="https://www.scopus.com/static/images/favicon.ico?ver=1.0" class="icon" /></a><a  href="https://www.webofscience.com/wos/author/record/A-1539-2013" rel="nofollow"><img src="icons/webofscience.png" class="icon" /></a><a  href="https://www.inesctec.pt/en/people/nuno-moreira-macedo" rel="nofollow"><img src="https://www.inesctec.pt/assets/favicon/apple-touch-icon.png" class="icon" /></a></p>
+    <p class="iconlinks">
+      <a  href="https://scholar.google.pt/citations?user=reE2X6IAAAAJ&amp;hl=en" rel="nofollow"><img src="../icons/google-scholar-square.svg" class="iconlink" title="Google Scholar"/></a>
+      <a href="http://orcid.org/0000-0002-4817-948X" rel="nofollow"><img src="../icons/orcid-square.svg" class="iconlink" title="ORCID"/></a>
+      <a  href="https://github.com/nmacedo" rel="nofollow"><img src="../icons/github-square.svg" class="iconlink" title="GitHub"/></a>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=55415518200" rel="nofollow"><img src="../icons/scopus-square.svg" class="iconlink" title="Scopus"/></a>
+      <a  href="https://ieeexplore.ieee.org/author/37086079618" rel="nofollow"><img src="../icons/ieee-square.svg" class="iconlink" title="IEEE Xplore"/></a>
+      <a  href="https://arxiv.org/a/macedo_n_1.html" rel="nofollow"><img src="../icons/arxiv-square.svg" class="iconlink" title="arXiv"/></a>
+      <a  href="https://dblp.uni-trier.de/pid/118/5967.html" rel="nofollow"><img src="../icons/dblp-square.svg" class="iconlink" title="DBLP"/></a>
+      <a  href="https://www.cienciavitae.pt/en/AC11-B15D-DDBD" rel="nofollow"><img src="../icons/ciencia-vitae-square.svg" class="iconlink" title="CIÊNCIAVITAE"/></a>
+      <a  href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Macedo%2C%20Nuno%22%20metadata.creators.person_or_org.name%3A%22Nuno%20Macedo%22&l=list&p=1&s=10&sort=mostviewed" rel="nofollow"><img src="../icons/zenodo-square.svg" class="iconlink" title="Zenodo"/></a>
+      <a  href="https://www.webofscience.com/wos/author/record/A-1539-2013" rel="nofollow"><img src="../icons/clarivate-square.svg" class="iconlink" title="Web of Science"/></a>
+      <a  href="https://dl.acm.org/author_page.cfm?id=81551078556" rel="nofollow"><img src="../icons/acmdl-square.svg" class="iconlink" title="ACM Digital Library"/></a>
+      <a  href="https://www.researchgate.net/profile/Nuno-Macedo-2" rel="nofollow"><img src="../icons/researchgate-square.svg" class="iconlink" title="ResearchGate"/></a>
+  </p>
 
 <div id="feed"></div>
   </div>
